@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="MinistryApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="scroll.css"/>
+    <link rel="icon" href="/Scrolling MOG/images/ch.png">
+</head>
+ 
+<body ng-controller ="PreachersController">
+    <h1>WELCOME TO CHURCH HISTORY</h1>
+    <h1>VIEW THEM AND BE INSPIRED</h1>
+    
+    <table>
+        <tr>
+            <td><button class="btn btn-danger"
+                        ng-click="previous();">previous
+                    
+                </button>
+            </td>
+            <td><img src="{{preachers[preachersCount]}}" class="big"></td>
+            <td><button class="btn btn-success"
+                ng-click="next();">next
+            </button>
+        </td>
+        </tr>
+    </table>
+</body>
+</html>
